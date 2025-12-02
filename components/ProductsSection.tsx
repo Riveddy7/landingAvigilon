@@ -47,7 +47,7 @@ const products = [
 
 export function ProductsSection() {
     return (
-        <section className="py-24 bg-neutral-50">
+        <section id="products-section" className="py-24 bg-neutral-50">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="text-center mb-12">
                     <motion.h2
@@ -69,7 +69,7 @@ export function ProductsSection() {
                     </motion.p>
                 </div>
 
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-16">
                     {products.map((product, index) => (
                         <motion.div
                             key={index}
@@ -96,6 +96,15 @@ export function ProductsSection() {
                             </p>
                         </motion.div>
                     ))}
+                </div>
+
+                <div className="text-center">
+                    <button
+                        onClick={() => document.getElementById('lead-form-modal')?.click()}
+                        className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-[#0078D4] rounded-full hover:bg-blue-600 hover:scale-105 shadow-lg"
+                    >
+                        Cotizar Equipos
+                    </button>
                 </div>
             </div>
         </section>

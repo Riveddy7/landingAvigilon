@@ -4,7 +4,7 @@ import { LeadForm } from "@/components/LeadForm";
 
 export function BottomContactSection() {
     return (
-        <section className="py-24 bg-gray-50 border-t border-gray-200">
+        <section id="contact-section" className="py-24 bg-gray-50 border-t border-gray-200">
             <div className="container mx-auto px-6">
                 <div className="max-w-4xl mx-auto">
                     <div className="text-center mb-12">

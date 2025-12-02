@@ -40,7 +40,7 @@ export function PainPoints() {
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-8">
+                <div className="grid md:grid-cols-3 gap-8 mb-16">
                     {painPoints.map((point, index) => (
                         <motion.div
                             key={index}
@@ -60,6 +60,15 @@ export function PainPoints() {
                             </p>
                         </motion.div>
                     ))}
+                </div>
+
+                <div className="text-center">
+                    <button
+                        onClick={() => document.getElementById('lead-form-modal')?.click()}
+                        className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-slate-900 rounded-full hover:bg-slate-800 hover:scale-105 shadow-lg"
+                    >
+                        Resolver mis Problemas de Seguridad
+                    </button>
                 </div>
             </div>
         </section>

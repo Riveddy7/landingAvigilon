@@ -3,13 +3,14 @@ import { Hero } from "@/components/Hero";
 import { PainPoints } from "@/components/PainPoints";
 import { UnitySection } from "@/components/UnitySection";
 import { ProductsSection } from "@/components/ProductsSection";
+import { ComparisonSection } from "@/components/ComparisonSection";
 import { AltaSection } from "@/components/AltaSection";
 import { TrustSection } from "@/components/TrustSection";
 import { Footer } from "@/components/Footer";
-import { MobileStickyBar } from "@/components/MobileStickyBar";
-import { ModalProvider } from "@/components/ModalContext";
 import { BottomContactSection } from "@/components/BottomContactSection";
+import { MobileStickyBar } from "@/components/MobileStickyBar";
 import { LeadFormModal } from "@/components/LeadFormModal";
+import { ModalProvider } from "@/components/ModalContext";
 
 export default function Home() {
   return (
@@ -18,9 +19,10 @@ export default function Home() {
         <Navbar />
         <Hero />
         <TrustSection />
+        <ComparisonSection />
         <UnitySection />
-        <ProductsSection />
         <AltaSection />
+        <ProductsSection />
         <PainPoints />
         <BottomContactSection />
         <Footer />
