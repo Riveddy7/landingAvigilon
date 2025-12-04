@@ -26,10 +26,10 @@ export function Navbar() {
                 {/* Navigation Links - Center */}
                 <div className="hidden md:flex items-center gap-8">
                     <button onClick={() => scrollToSection('unity-section')} className="text-sm font-medium text-gray-600 hover:text-[#0078D4] transition-colors">
-                        Unity (On-Premise)
+                        Unity (Servidor Físico)
                     </button>
                     <button onClick={() => scrollToSection('alta-section')} className="text-sm font-medium text-gray-600 hover:text-[#0078D4] transition-colors">
-                        Alta (Cloud)
+                        Alta (Nube)
                     </button>
                     <button onClick={() => scrollToSection('products-section')} className="text-sm font-medium text-gray-600 hover:text-[#0078D4] transition-colors">
                         Productos

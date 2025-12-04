@@ -24,14 +24,14 @@ export function AltaSection() {
                     >
                         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-sm font-medium mb-4">
                             <Cloud size={14} />
-                            <span>Cloud-Native Security</span>
+                            <span>Seguridad en la Nube</span>
                         </div>
                         <h2 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight text-slate-900">
                             Avigilon Alta <br />
-                            <span className="text-blue-600">Seguridad 100% en la Nube</span>
+                            <span className="text-blue-600">100% Sin Servidores</span>
                         </h2>
                         <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
-                            Sin servidores, sin complicaciones. La solución ideal para empresas modernas que buscan agilidad, acceso móvil y gestión remota desde cualquier lugar.
+                            Olvídate de los servidores y el mantenimiento. Acceso móvil y gestión desde cualquier lugar.
                         </p>
                     </motion.div>
                 </div>
@@ -47,7 +47,7 @@ export function AltaSection() {
                                 Alta Access (Openpath)
                             </h3>
                             <p className="text-slate-600 text-lg">
-                                Olvida las tarjetas plásticas. Alta Access convierte tu celular en tu llave, permitiendo una experiencia de acceso rápida, segura y sin contacto.
+                                Tu celular es tu llave. Acceso rápido, seguro y sin contacto.
                             </p>
 
                             <div className="grid sm:grid-cols-2 gap-6 pt-4">
@@ -57,7 +57,7 @@ export function AltaSection() {
                                     </div>
                                     <div>
                                         <h4 className="font-bold text-lg text-slate-900">Wave to Unlock</h4>
-                                        <p className="text-slate-500 text-sm">Abre puertas sin sacar el celular de tu bolsillo. Solo pasa la mano frente al lector.</p>
+                                        <p className="text-slate-500 text-sm">Abre puertas pasando la mano frente al lector, sin sacar el celular.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4">
@@ -66,7 +66,7 @@ export function AltaSection() {
                                     </div>
                                     <div>
                                         <h4 className="font-bold text-lg text-slate-900">Gestión Remota</h4>
-                                        <p className="text-slate-500 text-sm">Otorga pases de invitado, abre puertas y bloquea usuarios desde tu dashboard en la nube.</p>
+                                        <p className="text-slate-500 text-sm">Abre puertas y gestiona usuarios desde cualquier parte.</p>
                                     </div>
                                 </div>
                             </div>
@@ -123,29 +123,29 @@ export function AltaSection() {
                                 Alta Video (Ava)
                             </h3>
                             <p className="text-slate-600 text-lg">
-                                Cámaras inteligentes que no necesitan NVRs. Almacenan video en la cámara y en la nube, con analíticas de IA listas para usar desde el primer día.
+                                Cámaras inteligentes sin grabador. Guardan video en la cámara y en la nube. Analíticas listas para usar.
                             </p>
 
                             <ul className="space-y-4">
                                 <li className="flex gap-3 items-start">
                                     <div className="mt-1 w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 shrink-0">✓</div>
                                     <div>
-                                        <strong className="text-slate-900 block">Smart Search</strong>
-                                        <span className="text-slate-500 text-sm">Busca eventos como lo harías en Google. "Hombre con mochila azul" o "Coche rojo en el estacionamiento".</span>
+                                        <strong className="text-slate-900 block">Búsqueda Inteligente</strong>
+                                        <span className="text-slate-500 text-sm">Busca "Hombre con mochila azul" como si fuera Google.</span>
                                     </div>
                                 </li>
                                 <li className="flex gap-3 items-start">
                                     <div className="mt-1 w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 shrink-0">✓</div>
                                     <div>
                                         <strong className="text-slate-900 block">Mapas Dinámicos</strong>
-                                        <span className="text-slate-500 text-sm">Visualiza todas tus cámaras y alarmas en un mapa interactivo de tus instalaciones.</span>
+                                        <span className="text-slate-500 text-sm">Ve todas tus cámaras y alarmas en un mapa interactivo.</span>
                                     </div>
                                 </li>
                                 <li className="flex gap-3 items-start">
                                     <div className="mt-1 w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 shrink-0">✓</div>
                                     <div>
-                                        <strong className="text-slate-900 block">Detección de Anomalías de Audio</strong>
-                                        <span className="text-slate-500 text-sm">Las cámaras escuchan y alertan sobre gritos, disparos o rotura de cristales.</span>
+                                        <strong className="text-slate-900 block">Detección de Audio</strong>
+                                        <span className="text-slate-500 text-sm">Alertas por gritos, disparos o vidrios rotos.</span>
                                     </div>
                                 </li>
                             </ul>
@@ -161,7 +161,7 @@ export function AltaSection() {
                         Conocer Alta Cloud
                     </button>
                     <p className="mt-4 text-sm text-slate-500">
-                        Agenda una demo virtual y ve cómo funciona la nube de Avigilon.
+                        Agenda una demo virtual y ve cómo funciona la nube.
                     </p>
                 </div>
             </div>

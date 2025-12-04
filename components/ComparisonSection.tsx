@@ -16,10 +16,10 @@ export function ComparisonSection() {
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">
-                        ¿Cuál es la solución ideal para tu organización?
+                        ¿Cuál es la solución ideal para ti?
                     </h2>
                     <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-                        Avigilon ofrece dos caminos poderosos: la robustez del control total On-Premise con <span className="font-bold text-[#0078D4]">Unity</span> o la agilidad y escalabilidad de la Nube con <span className="font-bold text-[#0078D4]">Alta</span>.
+                        Avigilon ofrece dos caminos: el control total con <span className="font-bold text-[#0078D4]">Unity</span> o la agilidad de la Nube con <span className="font-bold text-[#0078D4]">Alta</span>.
                     </p>
                 </div>
 
@@ -29,7 +29,7 @@ export function ComparisonSection() {
                         initial={{ opacity: 0, x: -20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        className="bg-slate-50 rounded-2xl p-8 border border-slate-200 shadow-lg flex flex-col relative overflow-hidden"
+                        className="bg-white rounded-2xl p-8 border border-slate-200 shadow-lg flex flex-col relative overflow-hidden"
                     >
                         <div className="absolute top-0 right-0 p-4 opacity-5">
                             <Server size={120} />
@@ -39,29 +39,29 @@ export function ComparisonSection() {
                                 <Server className="text-[#0078D4]" />
                                 Avigilon Unity
                             </h3>
-                            <p className="text-sm font-semibold text-[#0078D4] uppercase tracking-wider mt-1">On-Premise Security Suite</p>
+                            <p className="text-sm font-semibold text-[#0078D4] uppercase tracking-wider mt-1">Con Servidor Físico</p>
                         </div>
 
                         <ul className="space-y-4 mb-8 flex-1">
                             <li className="flex gap-3">
                                 <Check className="text-green-600 shrink-0" size={20} />
-                                <span className="text-slate-700">Control total de datos e infraestructura local.</span>
+                                <span className="text-slate-700">Control total de tus datos e infraestructura.</span>
                             </li>
                             <li className="flex gap-3">
                                 <Check className="text-green-600 shrink-0" size={20} />
-                                <span className="text-slate-700">Ideal para sitios con restricciones de internet o cumplimiento estricto.</span>
+                                <span className="text-slate-700">Ideal si tienes restricciones de internet.</span>
                             </li>
                             <li className="flex gap-3">
                                 <Check className="text-green-600 shrink-0" size={20} />
-                                <span className="text-slate-700">Analíticas de IA avanzadas en el borde (Edge) y servidor.</span>
+                                <span className="text-slate-700">Analíticas de IA avanzadas en sitio.</span>
                             </li>
                             <li className="flex gap-3">
                                 <Check className="text-green-600 shrink-0" size={20} />
-                                <span className="text-slate-700">Gestión unificada de Video y Acceso desde una sola interfaz.</span>
+                                <span className="text-slate-700">Video y Acceso en una sola pantalla.</span>
                             </li>
                             <li className="flex gap-3">
                                 <Check className="text-green-600 shrink-0" size={20} />
-                                <span className="text-slate-700">Sin rentas mensuales obligatorias (Licenciamiento perpetuo).</span>
+                                <span className="text-slate-700">Un solo pago (Licenciamiento perpetuo).</span>
                             </li>
                         </ul>
 
@@ -69,7 +69,7 @@ export function ComparisonSection() {
                             onClick={() => scrollToSection('unity-section')}
                             className="w-full py-4 rounded-xl bg-white border-2 border-[#0078D4] text-[#0078D4] font-bold hover:bg-[#0078D4] hover:text-white transition-all duration-300 shadow-sm"
                         >
-                            Explorar Soluciones Unity
+                            Ver Soluciones Unity
                         </button>
                     </motion.div>
 
@@ -78,47 +78,47 @@ export function ComparisonSection() {
                         initial={{ opacity: 0, x: 20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        className="bg-slate-900 rounded-2xl p-8 border border-slate-800 shadow-xl flex flex-col relative overflow-hidden"
+                        className="bg-white rounded-2xl p-8 border border-slate-200 shadow-lg flex flex-col relative overflow-hidden"
                     >
                         <div className="absolute top-0 right-0 p-4 opacity-5">
-                            <Cloud size={120} className="text-white" />
+                            <Cloud size={120} className="text-blue-600" />
                         </div>
                         <div className="mb-6">
-                            <h3 className="text-2xl font-bold text-white flex items-center gap-3">
-                                <Cloud className="text-blue-400" />
+                            <h3 className="text-2xl font-bold text-slate-900 flex items-center gap-3">
+                                <Cloud className="text-blue-600" />
                                 Avigilon Alta
                             </h3>
-                            <p className="text-sm font-semibold text-blue-400 uppercase tracking-wider mt-1">Cloud-Native Security</p>
+                            <p className="text-sm font-semibold text-blue-600 uppercase tracking-wider mt-1">100% Nube</p>
                         </div>
 
                         <ul className="space-y-4 mb-8 flex-1">
                             <li className="flex gap-3">
-                                <Check className="text-blue-400 shrink-0" size={20} />
-                                <span className="text-slate-300">100% en la Nube. Sin servidores ni mantenimiento de software.</span>
+                                <Check className="text-blue-600 shrink-0" size={20} />
+                                <span className="text-slate-700">Sin servidores ni mantenimiento.</span>
                             </li>
                             <li className="flex gap-3">
-                                <Check className="text-blue-400 shrink-0" size={20} />
-                                <span className="text-slate-300">Acceso móvil "Wave to Unlock" y gestión remota desde cualquier lugar.</span>
+                                <Check className="text-blue-600 shrink-0" size={20} />
+                                <span className="text-slate-700">Acceso móvil y gestión remota total.</span>
                             </li>
                             <li className="flex gap-3">
-                                <Check className="text-blue-400 shrink-0" size={20} />
-                                <span className="text-slate-300">Escalabilidad infinita, desde 1 puerta hasta miles de sitios.</span>
+                                <Check className="text-blue-600 shrink-0" size={20} />
+                                <span className="text-slate-700">Crece contigo, de 1 a mil puertas.</span>
                             </li>
                             <li className="flex gap-3">
-                                <Check className="text-blue-400 shrink-0" size={20} />
-                                <span className="text-slate-300">Ciberseguridad automática y actualizaciones al instante.</span>
+                                <Check className="text-blue-600 shrink-0" size={20} />
+                                <span className="text-slate-700">Ciberseguridad automática.</span>
                             </li>
                             <li className="flex gap-3">
-                                <Check className="text-blue-400 shrink-0" size={20} />
-                                <span className="text-slate-300">Modelo de suscripción flexible (OpEx).</span>
+                                <Check className="text-blue-600 shrink-0" size={20} />
+                                <span className="text-slate-700">Suscripción anual flexible.</span>
                             </li>
                         </ul>
 
                         <button
                             onClick={() => scrollToSection('alta-section')}
-                            className="w-full py-4 rounded-xl bg-[#0078D4] text-white font-bold hover:bg-blue-600 transition-all duration-300 shadow-lg shadow-blue-900/20"
+                            className="w-full py-4 rounded-xl bg-[#0078D4] text-white font-bold hover:bg-blue-600 transition-all duration-300 shadow-lg"
                         >
-                            Explorar Soluciones Alta
+                            Ver Soluciones Alta
                         </button>
                     </motion.div>
                 </div>
@@ -130,35 +130,35 @@ export function ComparisonSection() {
                             <thead>
                                 <tr className="bg-gray-50">
                                     <th className="p-4 text-sm font-semibold text-gray-500 uppercase tracking-wider">Característica</th>
-                                    <th className="p-4 text-sm font-bold text-slate-900 w-1/3">Avigilon Unity (On-Premise)</th>
-                                    <th className="p-4 text-sm font-bold text-[#0078D4] w-1/3">Avigilon Alta (Cloud)</th>
+                                    <th className="p-4 text-sm font-bold text-slate-900 w-1/3">Avigilon Unity</th>
+                                    <th className="p-4 text-sm font-bold text-[#0078D4] w-1/3">Avigilon Alta</th>
                                 </tr>
                             </thead>
                             <tbody className="divide-y divide-gray-200 bg-white">
                                 <tr>
                                     <td className="p-4 text-slate-600 font-medium">Infraestructura</td>
-                                    <td className="p-4 text-slate-800">Servidores Locales (NVRs/Appliances)</td>
-                                    <td className="p-4 text-slate-800">100% Sin Servidores (Cloud-Native)</td>
+                                    <td className="p-4 text-slate-800">Servidores Locales</td>
+                                    <td className="p-4 text-slate-800">Sin Servidores (Nube)</td>
                                 </tr>
                                 <tr>
                                     <td className="p-4 text-slate-600 font-medium">Acceso Remoto</td>
-                                    <td className="p-4 text-slate-800">Vía Unity Cloud Services (Híbrido)</td>
-                                    <td className="p-4 text-slate-800">Nativo desde cualquier navegador/app</td>
+                                    <td className="p-4 text-slate-800">Híbrido (Requiere configuración)</td>
+                                    <td className="p-4 text-slate-800">Nativo (Navegador/App)</td>
                                 </tr>
                                 <tr>
                                     <td className="p-4 text-slate-600 font-medium">Mantenimiento</td>
-                                    <td className="p-4 text-slate-800">Controlado por TI (Actualizaciones manuales)</td>
-                                    <td className="p-4 text-slate-800">Automático (Siempre actualizado)</td>
+                                    <td className="p-4 text-slate-800">Manual (Controlado por TI)</td>
+                                    <td className="p-4 text-slate-800">Automático</td>
                                 </tr>
                                 <tr>
                                     <td className="p-4 text-slate-600 font-medium">Modelo de Costo</td>
-                                    <td className="p-4 text-slate-800">CapEx (Inversión inicial mayor, sin rentas)</td>
-                                    <td className="p-4 text-slate-800">OpEx (Suscripción anual recurrente)</td>
+                                    <td className="p-4 text-slate-800">Inversión inicial (Sin rentas)</td>
+                                    <td className="p-4 text-slate-800">Suscripción anual</td>
                                 </tr>
                                 <tr>
                                     <td className="p-4 text-slate-600 font-medium">Ciberseguridad</td>
-                                    <td className="p-4 text-slate-800">Gestionada por el usuario/partner</td>
-                                    <td className="p-4 text-slate-800">Gestionada por Avigilon (End-to-End)</td>
+                                    <td className="p-4 text-slate-800">Gestionada por ti</td>
+                                    <td className="p-4 text-slate-800">Gestionada por Avigilon</td>
                                 </tr>
                             </tbody>
                         </table>

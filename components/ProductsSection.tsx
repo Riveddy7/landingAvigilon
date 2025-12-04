@@ -65,7 +65,7 @@ export function ProductsSection() {
                         transition={{ delay: 0.1 }}
                         className="text-lg text-slate-600 max-w-2xl mx-auto"
                     >
-                        Soluciones de seguridad on-premise diseñadas para el rendimiento.
+                        Soluciones de seguridad con servidor físico diseñadas para el rendimiento.
                     </motion.p>
                 </div>
 

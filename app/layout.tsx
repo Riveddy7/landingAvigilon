@@ -25,8 +25,8 @@ export default function RootLayout({
         className={`${inter.variable} antialiased`}
       >
         {children}
-        {/* <BitrixWidget /> */}
-        <ThreeCXWidget />
+        <BitrixWidget />
+        {/* <ThreeCXWidget /> */}
       </body>
     </html>
   );

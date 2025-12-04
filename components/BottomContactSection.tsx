@@ -12,7 +12,7 @@ export function BottomContactSection() {
                             ¿Listo para blindar tu operación? Hablemos.
                         </h2>
                         <p className="text-lg text-gray-600 mb-4">
-                            Nuestros ingenieros analizarán tus riesgos y diseñarán una solución a medida.
+                            Analizamos tus riesgos y diseñamos tu solución.
                         </p>
                         <p className="text-xl font-bold text-[#0078D4]">
                             Llámanos: 664 370 4676
