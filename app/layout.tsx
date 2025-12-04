@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { BitrixWidget } from "@/components/BitrixWidget";
+import { ThreeCXWidget } from "@/components/ThreeCXWidget";
 import "./globals.css";
 
 const inter = Inter({
@@ -24,7 +25,8 @@ export default function RootLayout({
         className={`${inter.variable} antialiased`}
       >
         {children}
-        <BitrixWidget />
+        {/* <BitrixWidget /> */}
+        <ThreeCXWidget />
       </body>
     </html>
   );
