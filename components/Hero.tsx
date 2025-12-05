@@ -11,49 +11,58 @@ export function Hero() {
     const [isVideoOpen, setIsVideoOpen] = useState(false);
 
     return (
-        <section className="relative h-screen flex items-center justify-center overflow-hidden bg-white">
-            {/* Minimalist Background */}
+        <section className="relative h-screen flex items-center overflow-hidden bg-slate-900">
+            {/* Video Background */}
             <div className="absolute inset-0 z-0">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-50 via-white to-white" />
-                <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-5" />
+                <div className="absolute inset-0 bg-black/40 z-10" />
+                <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent z-20" />
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="absolute inset-0 w-full h-full object-cover opacity-100"
+                >
+                    <source src="https://www.avigilon.com/fs/videos/Hero-Videos/Homepage/Homepage-Video-2880x1480-10.23.25-9mb.mp4" type="video/mp4" />
+                </video>
             </div>
 
-            <div className="container mx-auto px-6 relative z-30 text-center">
+            <div className="container mx-auto px-6 relative z-30">
                 <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
+                    initial={{ opacity: 0, x: -30 }}
+                    animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
-                    className="max-w-4xl mx-auto space-y-8"
+                    className="max-w-3xl mr-auto space-y-8 text-left"
                 >
-                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-sm tracking-widest uppercase font-medium mb-4">
-                        <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" />
-                        Avigilon Premier Partner
+                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-md text-white text-sm tracking-widest uppercase font-medium mb-4">
+                        <span className="w-2 h-2 rounded-full bg-[#0078D4] animate-pulse" />
+                        IAMET | Avigilon Premier Partner
                     </div>
 
-                    <h1 className="text-6xl md:text-8xl font-bold text-slate-900 tracking-tight leading-none">
-                        Detecta. <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0078D4] to-blue-600">Verifica.</span> Actúa.
+                    <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tight leading-none drop-shadow-lg">
+                        Tu Socio Certificado de <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0078D4] to-blue-400">Avigilon</span> en México.
                     </h1>
 
-                    <p className="text-xl md:text-2xl text-slate-600 max-w-2xl mx-auto font-light leading-relaxed">
-                        Seguridad inteligente que entiende lo que ve. Enfócate en lo que importa.
+                    <p className="text-lg md:text-xl text-gray-200 max-w-2xl font-light leading-relaxed drop-shadow-md">
+                        Validación inmediata de seguridad inteligente. Somos integradores Premier con REPSE, opciones de crédito y soporte local desde Tijuana para todo el país.
                     </p>
 
-                    <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-8">
+                    <div className="flex flex-col sm:flex-row items-start gap-6 pt-8">
                         <Button
                             onClick={openModal}
                             className="h-14 px-8 text-lg font-bold bg-[#0078D4] hover:bg-[#006cbd] text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 scale-100 hover:scale-105"
                         >
-                            Solicitar Demo
+                            Contactanos
                         </Button>
 
                         <button
                             onClick={() => setIsVideoOpen(true)}
-                            className="group flex items-center gap-3 text-slate-600 hover:text-[#0078D4] transition-colors"
+                            className="group flex items-center gap-3 text-white hover:text-[#0078D4] transition-colors"
                         >
-                            <div className="w-12 h-12 rounded-full border border-slate-200 flex items-center justify-center group-hover:border-[#0078D4] group-hover:bg-blue-50 transition-all">
+                            <div className="w-12 h-12 rounded-full border border-white/30 flex items-center justify-center group-hover:border-[#0078D4] group-hover:bg-[#0078D4]/10 transition-all">
                                 <Play className="w-5 h-5 fill-current" />
                             </div>
-                            <span className="font-medium tracking-wide">Ver Video</span>
+                            <span className="font-medium tracking-wide drop-shadow-md">Ver Video</span>
                         </button>
                     </div>
                 </motion.div>
