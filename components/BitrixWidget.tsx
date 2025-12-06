@@ -19,8 +19,8 @@ export function BitrixWidget() {
             widget.subscribe({
                 type: 'userMessage', // Using string type directly as BX might not be fully typed globally
                 callback: function () {
-                    if (typeof window.gtag === 'function') {
-                        window.gtag('event', 'conversion', { 'send_to': 'AW-17435666964/m6psCIKg4MwbEJTU_PlA' });
+                    if (typeof (window as any).gtag === 'function') {
+                        (window as any).gtag('event', 'conversion', { 'send_to': 'AW-17435666964/m6psCIKg4MwbEJTU_PlA' });
                     }
                 }
             });
