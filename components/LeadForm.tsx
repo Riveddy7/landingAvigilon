@@ -30,6 +30,15 @@ export function LeadForm({ className }: { className?: string }) {
             if (result.success) {
                 setStatus('success');
                 (event.target as HTMLFormElement).reset();
+
+                // Track Google Ads Conversion
+                if (typeof window !== 'undefined' && (window as any).gtag) {
+                    (window as any).gtag('event', 'conversion', {
+                        'send_to': 'AW-17435666964/nPk2CIWg4MwbEJTU_PlA',
+                        'value': 1.0,
+                        'currency': 'MXN'
+                    });
+                }
             } else {
                 setStatus('error');
                 setErrorMessage(result.error || "Algo salió mal.");
