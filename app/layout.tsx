@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Inter } from "next/font/google";
 import { BitrixWidget } from "@/components/BitrixWidget";
 import { ThreeCXWidget } from "@/components/ThreeCXWidget";
@@ -27,6 +28,21 @@ export default function RootLayout({
         {children}
         <BitrixWidget />
         {/* <ThreeCXWidget /> */}
+
+        {/* Google Tag Manager */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-2VZXNDKWQH"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-2VZXNDKWQH');
+          `}
+        </Script>
       </body>
     </html>
   );
